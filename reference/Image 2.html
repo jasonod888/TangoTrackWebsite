@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Net Practice | Precision Simulation for Professionals</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface": "#f9f9f9",
+                    "error-container": "#ffdad6",
+                    "surface-tint": "#b12d00",
+                    "background": "#f9f9f9",
+                    "on-tertiary-container": "#fefcff",
+                    "on-secondary-fixed-variant": "#474746",
+                    "outline": "#926f66",
+                    "surface-container": "#eeeeee",
+                    "error": "#ba1a1a",
+                    "secondary-fixed-dim": "#c8c6c5",
+                    "inverse-surface": "#2f3131",
+                    "inverse-on-surface": "#f1f1f1",
+                    "tertiary": "#005daa",
+                    "tertiary-fixed": "#d4e3ff",
+                    "secondary-fixed": "#e5e2e1",
+                    "on-error-container": "#93000a",
+                    "on-primary-fixed": "#3b0900",
+                    "on-tertiary-fixed": "#001c3a",
+                    "on-background": "#1a1c1c",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-fixed-dim": "#a5c8ff",
+                    "primary": "#ad2c00",
+                    "on-primary": "#ffffff",
+                    "inverse-primary": "#ffb5a0",
+                    "secondary": "#5f5e5e",
+                    "outline-variant": "#e7bdb2",
+                    "surface-container-highest": "#e2e2e2",
+                    "on-tertiary-fixed-variant": "#004785",
+                    "on-surface-variant": "#5d4038",
+                    "surface-container-high": "#e8e8e8",
+                    "primary-container": "#d83900",
+                    "surface-bright": "#f9f9f9",
+                    "on-surface": "#1a1c1c",
+                    "tertiary-container": "#0075d5",
+                    "on-primary-fixed-variant": "#872000",
+                    "surface-container-low": "#f3f3f3",
+                    "surface-variant": "#e2e2e2",
+                    "primary-fixed-dim": "#ffb5a0",
+                    "on-secondary-container": "#636262",
+                    "primary-fixed": "#ffdbd1",
+                    "surface-container-lowest": "#ffffff",
+                    "on-error": "#ffffff",
+                    "on-secondary-fixed": "#1c1b1b",
+                    "on-secondary": "#ffffff",
+                    "surface-dim": "#dadada",
+                    "secondary-container": "#e2dfde",
+                    "on-primary-container": "#fffbff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "xs": "4px",
+                    "margin": "32px",
+                    "sm": "8px",
+                    "gutter": "24px",
+                    "xl": "48px",
+                    "md": "16px",
+                    "unit": "4px",
+                    "lg": "24px"
+            },
+            "fontFamily": {
+                    "label-md": ["Inter"],
+                    "headline-lg": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "display-lg": ["Inter"],
+                    "headline-md": ["Inter"],
+                    "body-md": ["Inter"],
+                    "label-sm": ["Inter"]
+            },
+            "fontSize": {
+                    "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.01em", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-sm": ["12px", {"lineHeight": "1.2", "fontWeight": "500"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body class="font-body-md text-on-background selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<header class="bg-white/80 backdrop-blur-md dark:bg-gray-900/80 font-['Inter'] antialiased text-sm font-medium tracking-tight docked full-width top-0 sticky border-b border-gray-200 dark:border-gray-800 z-50">
+<nav class="flex justify-between items-center w-full px-6 py-4 max-w-[1280px] mx-auto">
+<div class="flex items-center gap-12">
+<span class="text-xl font-bold tracking-tighter text-gray-900 dark:text-white">Net Practice</span>
+<div class="hidden md:flex gap-8">
+<a class="text-[#FF4500] font-semibold border-b-2 border-[#FF4500] pb-1" href="#">Solutions</a>
+<a class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors" href="#">Platform</a>
+<a class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors" href="#">Enterprise</a>
+<a class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors" href="#">Resources</a>
+<a class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors" href="#">Pricing</a>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<button class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">Log In</button>
+<button class="bg-[#FF4500] text-white px-5 py-2.5 rounded-lg font-semibold text-sm active:opacity-80 active:scale-[0.99] transition-all duration-200">Get Started</button>
+</div>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="max-w-[1280px] mx-auto px-6 pt-xl pb-xl grid md:grid-cols-2 gap-12 items-center">
+<div class="flex flex-col gap-lg">
+<span class="text-[#FF4500] font-label-md tracking-wider uppercase">The Science of Performance</span>
+<h1 class="font-display-lg text-display-lg text-on-surface">Precision simulations for high-stakes environments.</h1>
+<p class="text-body-lg text-secondary max-w-lg">Master complex workflows and critical decision-making through hyper-realistic digital rehearsals. Sharpen your edge before the real work begins.</p>
+<div class="flex flex-wrap gap-md pt-md">
+<button class="bg-[#FF4500] text-white px-8 py-4 rounded-xl font-semibold text-body-md active:opacity-80 active:scale-[0.99] transition-all duration-200">Get Started</button>
+<button class="border border-outline-variant text-on-surface px-8 py-4 rounded-xl font-semibold text-body-md hover:bg-surface-container-low transition-all">Watch Demo</button>
+</div>
+</div>
+<div class="relative">
+<div class="aspect-square rounded-2xl overflow-hidden bg-surface-container border border-outline-variant">
+<img alt="Simulation Professional" class="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-700" data-alt="Modern professional woman in a sleek office environment focused on a digital interface with holographic data overlays and soft sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZ8QnFfYqD6G96puX1Dq0BxZnROYllVYXvBriaj90FKpkiccU0nahQY2nULtXeESuttQuHRl0pIIjCh5Cx3mtD2InhRCJgYNO5o3-SDqQtBF2dQ1diofvuDofglV6iNKT9D4S1nMiUT0kOyV-YGGuNFOFRTD9Zgd6-hYM3BcNPxDEA5UoM9P_TWajRHZwoass6NMxA9M_4BX4zB6rzL3iwDBB8dqh5hEThbh4JepL1TFGxtEVLslbmmD5DhPtoLiZOEHiZsg17B2ZG"/>
+</div>
+<div class="absolute -bottom-6 -left-6 bg-white p-6 border border-outline-variant rounded-xl shadow-sm hidden lg:block">
+<div class="flex items-center gap-4">
+<div class="w-3 h-3 rounded-full bg-[#FF4500] animate-pulse"></div>
+<span class="font-label-md text-on-surface">Live Simulation Running</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats Section -->
+<section class="bg-surface-container-low border-y border-outline-variant">
+<div class="max-w-[1280px] mx-auto px-6 py-xl flex flex-wrap justify-between gap-xl">
+<div class="flex flex-col gap-xs">
+<span class="text-display-lg text-on-surface font-extrabold">12M+</span>
+<span class="text-secondary font-label-md">Simulations Run</span>
+</div>
+<div class="flex flex-col gap-xs">
+<span class="text-display-lg text-on-surface font-extrabold">98%</span>
+<span class="text-secondary font-label-md">Team Retention</span>
+</div>
+<div class="flex flex-col gap-xs">
+<span class="text-display-lg text-on-surface font-extrabold">45%</span>
+<span class="text-secondary font-label-md">Skill Uplift</span>
+</div>
+<div class="flex flex-col gap-xs">
+<span class="text-display-lg text-on-surface font-extrabold">250+</span>
+<span class="text-secondary font-label-md">Enterprise Partners</span>
+</div>
+</div>
+</section>
+<!-- Value Propositions (Bento Style) -->
+<section class="max-w-[1280px] mx-auto px-6 py-xl">
+<div class="text-center mb-xl">
+<h2 class="text-headline-lg font-headline-lg mb-4">Engineered for Excellence</h2>
+<p class="text-body-md text-secondary">A disciplined approach to professional development.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-lg">
+<!-- Card 1 -->
+<div class="p-lg bg-white border border-outline-variant flex flex-col gap-md group hover:border-[#FF4500] transition-colors duration-300">
+<div class="w-12 h-12 flex items-center justify-center bg-surface-container-low rounded-lg text-[#FF4500]">
+<span class="material-symbols-outlined" data-icon="shield_with_heart" data-weight="fill">shield_with_heart</span>
+</div>
+<h3 class="text-headline-md font-headline-md">Prepare with Confidence</h3>
+<p class="text-body-md text-secondary">Face high-stakes scenarios in a controlled environment. Build the muscle memory required for real-world excellence.</p>
+</div>
+<!-- Card 2 -->
+<div class="p-lg bg-white border border-outline-variant flex flex-col gap-md group hover:border-[#FF4500] transition-colors duration-300">
+<div class="w-12 h-12 flex items-center justify-center bg-surface-container-low rounded-lg text-[#FF4500]">
+<span class="material-symbols-outlined" data-icon="rocket_launch" data-weight="fill">rocket_launch</span>
+</div>
+<h3 class="text-headline-md font-headline-md">Learn Without Risk</h3>
+<p class="text-body-md text-secondary">Test bold strategies and innovative solutions without fear of failure. Our platform provides the safety to experiment.</p>
+</div>
+<!-- Card 3 -->
+<div class="p-lg bg-white border border-outline-variant flex flex-col gap-md group hover:border-[#FF4500] transition-colors duration-300">
+<div class="w-12 h-12 flex items-center justify-center bg-surface-container-low rounded-lg text-[#FF4500]">
+<span class="material-symbols-outlined" data-icon="loop" data-weight="fill">loop</span>
+</div>
+<h3 class="text-headline-md font-headline-md">Fail. Learn. Improve. Repeat.</h3>
+<p class="text-body-md text-secondary">Rapid feedback loops and data-driven insights ensure that every simulation contributes to measurable growth.</p>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="max-w-[1280px] mx-auto px-6 py-xl mb-xl">
+<div class="bg-white border border-outline-variant p-xl flex flex-col items-center text-center gap-lg rounded-2xl relative overflow-hidden">
+<div class="absolute inset-0 opacity-[0.03] pointer-events-none" style="background-image: radial-gradient(#FF4500 1px, transparent 1px); background-size: 24px 24px;"></div>
+<h2 class="text-display-lg font-display-lg max-w-2xl">Ready to sharpen your edge?</h2>
+<p class="text-body-lg text-secondary max-w-xl">Join the thousands of organizations using Net Practice to secure their operational future.</p>
+<div class="flex gap-md">
+<button class="bg-[#FF4500] text-white px-12 py-5 rounded-xl font-bold text-lg active:opacity-80 active:scale-[0.99] transition-all duration-200">Start Your Free Trial</button>
+</div>
+<div class="flex gap-sm mt-md">
+<span class="material-symbols-outlined text-[#FF4500]" data-icon="check_circle">check_circle</span>
+<span class="text-label-md text-secondary">No credit card required</span>
+<span class="mx-md text-outline-variant">|</span>
+<span class="material-symbols-outlined text-[#FF4500]" data-icon="check_circle">check_circle</span>
+<span class="text-label-md text-secondary">Unlimited team seats for 14 days</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-white dark:bg-gray-950 w-full border-t border-gray-200 dark:border-gray-800">
+<div class="max-w-[1280px] mx-auto px-6 py-12 grid grid-cols-2 md:grid-cols-5 gap-8">
+<div class="col-span-2 flex flex-col gap-md">
+<span class="text-lg font-bold text-gray-900 dark:text-white">Net Practice</span>
+<p class="text-gray-500 dark:text-gray-400 max-w-xs font-['Inter'] text-sm leading-relaxed">
+                    Precision simulation for professional environments. Elevating human performance through digital rehearsals.
+                </p>
+<p class="text-xs text-gray-400 mt-md">© 2024 Net Practice. All rights reserved.</p>
+</div>
+<div class="flex flex-col gap-sm">
+<span class="font-bold text-sm mb-2 text-on-surface">Product</span>
+<a class="text-gray-500 dark:text-gray-400 hover:text-[#FF4500] transition-colors duration-200 text-sm" href="#">Features</a>
+<a class="text-gray-500 dark:text-gray-400 hover:text-[#FF4500] transition-colors duration-200 text-sm" href="#">Pricing</a>
+<a class="text-gray-500 dark:text-gray-400 hover:text-[#FF4500] transition-colors duration-200 text-sm" href="#">Integrations</a>
+<a class="text-gray-500 dark:text-gray-400 hover:text-[#FF4500] transition-colors duration-200 text-sm" href="#">Status</a>
+</div>
+<div class="flex flex-col gap-sm">
+<span class="font-bold text-sm mb-2 text-on-surface">Company</span>
+<a class="text-gray-500 dark:text-gray-400 hover:text-[#FF4500] transition-colors duration-200 text-sm" href="#">About</a>
+<a class="text-gray-500 dark:text-gray-400 hover:text-[#FF4500] transition-colors duration-200 text-sm" href="#">Careers</a>
+<a class="text-gray-500 dark:text-gray-400 hover:text-[#FF4500] transition-colors duration-200 text-sm" href="#">Contact</a>
+<a class="text-gray-500 dark:text-gray-400 hover:text-[#FF4500] transition-colors duration-200 text-sm" href="#">Legal</a>
+</div>
+<div class="flex flex-col gap-sm">
+<span class="font-bold text-sm mb-2 text-on-surface">Support</span>
+<a class="text-gray-500 dark:text-gray-400 hover:text-[#FF4500] transition-colors duration-200 text-sm" href="#">Help Center</a>
+<a class="text-gray-500 dark:text-gray-400 hover:text-[#FF4500] transition-colors duration-200 text-sm" href="#">Documentation</a>
+<a class="text-gray-500 dark:text-gray-400 hover:text-[#FF4500] transition-colors duration-200 text-sm" href="#">API Reference</a>
+<a class="text-gray-500 dark:text-gray-400 hover:text-[#FF4500] transition-colors duration-200 text-sm" href="#">System Status</a>
+</div>
+</div>
+</footer>
+</body></html>
